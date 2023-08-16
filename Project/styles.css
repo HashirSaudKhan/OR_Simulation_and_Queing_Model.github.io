@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+    /* Increase spacing */
+}
+
+.heading h1 {
+    font-size: 3.5rem;
+    /* Larger font size */
+    color: #3f51b5;
+    /* Stylish color */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: scaleIn 1s ease;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideUp 1s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.action-btn {
+    padding: 15px 30px;
+    font-size: 1.4rem;
+    /* Larger font size */
+    color: #fff;
+    background-color: #f44336;
+    /* Reddish color */
+    border: none;
+    border-radius: 30px;
+    /* More rounded border */
+    margin: 20px 0;
+    /* Increased margin */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow */
+    width: 150px;
+    /* Slightly wider */
+    text-decoration: none;
+    /* Remove underline from links */
+    display: inline-flex;
+    /* Display as inline-flex to align center */
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
+}
+
+.action-btn:hover {
+    background-color: #e53935;
+    /* Darker on hover */
+    transform: scale(1.08);
+    /* Slightly bigger on hover */
+}
+
+.action-btn:focus {
+    outline: none;
+}
+
+.action-btn:first-child {
+    background-color: #ff7043;
+    /* Lighter orangish color */
+    box-shadow: 0 6px 8px rgba(255, 112, 67, 0.3);
+    /* Enhanced shadow */
+}
+
+.action-btn:first-child:hover {
+    background-color: #ff5722;
+    /* Darker on hover */
+}
+
+.action-btn:last-child {
+    background-color: #66bb6a;
+    /* Green color */
+    box-shadow: 0 6px 8px rgba(102, 187, 106, 0.3);
+    /* Enhanced shadow */
+}
+
+.action-btn:last-child:hover {
+    background-color: #388e3c;
+    /* Darker on hover */
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

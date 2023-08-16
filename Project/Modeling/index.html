@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Queuing Model Formulas</title>
+</head>
+
+<body>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <div class="container-1">
+        <div>
+            <h1>Queuing Models</h1>
+
+            <label>Select Queuing system</label>
+            <select id="queuing-model" onchange="Addvalues()">
+                <option value="">--Select any distribution--</option>
+                <option value="M/M/1"> M/M/1</option>
+                <option value="M/M/2"> M/M/2</option>
+                <option value="M/G/1"> M/G/1</option>
+                <option value="M/G/2"> M/G/2</option>
+                <option value="G/G/1"> G/G/1</option>
+                <option value="G/G/2"> G/G/2</option>
+            </select>
+
+            <br /> <br />
+            <input type="number" placeholder="Arrival Rate" id="lambda">
+            <br /> <br />
+            <input type="number" placeholder="Service Rate" id="mew">
+            <br /> <br />
+
+            <input type="number" placeholder="Min Service Time" id="min">
+            <br /> <br />
+
+            <input type="number" placeholder="Max Service Time" id="max">
+            <br /> <br />
+
+            <input type="number" placeholder="Variance of arrival rate" id="variance-1">
+            <br /> <br />
+
+            <input type="number" placeholder="Variance of service rate" id="variance-2">
+            <br /> <br/>
+
+            <button onclick="Calculate()">Calculate</button>
+
+            <br /> <br />
+
+            <span class="tt">Server utilization</span>
+            <p id="utilization"></p>
+            <span class="tt">Avg Queue Length</span>
+            <p id="avg-queue-length"></p>
+            <span class="tt">Avg Waiting Time (Queue)</span>
+            <p id="avg-waitingTime-queue"></p>
+            <span class="tt">Avg Waiting Time (system)</span>
+            <p id="avg-waitingTime-system"></p>
+            <span class="tt">Avg Queue Length (system)</span>
+            <p id="avg-queue-length-system"></p>
+
+
+        </div>
+
+
+    </div>
+    <div class="container-1">
+        <button class="home-btn" onclick="goToHomePage()">Home</button>
+    </div>
+    <script src="./index.js"></script>
+
+
+</body>
+
+</html>

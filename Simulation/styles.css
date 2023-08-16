@@ -1,0 +1,149 @@
+/* Reset default styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Align items to the top */
+    height: 100vh;
+    margin-top: 20px;
+    /* Adjust the top margin as needed */
+}
+
+.container-1>div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    /* Adjust the width as needed */
+    max-width: 500px;
+    /* Add a max-width for larger screens */
+    position: relative;
+    margin-top: 10px;
+    /* Adjust the top margin as needed */
+    overflow-y: auto;
+    /* Enable vertical scrolling if needed */
+    max-height: calc(100vh - 120px);
+    /* Limit the max height to viewport height minus some spacing */
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+    color: #e74c3c;
+    /* Changed heading color */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #3498db;
+    /* Changed label color */
+}
+
+select,
+input {
+    width: 95%;
+    /* Use full width to prevent content overflow */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* Adjust spacing between inputs */
+    background-color: #f9f9f9;
+}
+
+button {
+    width: 100%;
+    background-color: #3498db;
+    /* Changed button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Changed button hover color */
+    transform: scale(1.05);
+}
+
+.tt {
+    margin: 10px 0;
+    color: #333;
+    /* Changed text color */
+}
+
+
+/* Sticky home button */
+
+.home-btn {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    /* Changed button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.home-btn:hover {
+    background-color: #2980b9;
+    /* Changed button hover color */
+    transform: scale(1.05);
+}
+
+
+/* styles.css */
+
+#simulation_table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    /* Center the content in the table cells */
+}
+
+#simulation_table th,
+#simulation_table td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+#simulation_table th {
+    background-color: white;
+}
+
+
+/* Center the content in the table cells */
+
+#simulation_table th,
+#simulation_table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Add other styling as needed */
